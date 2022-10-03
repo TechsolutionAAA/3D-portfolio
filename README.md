@@ -1,4 +1,4 @@
-# Portfolio 2020
+# 3D-portfolio
 
 As a quarantine project, I wanted to learn 3D web development, and decided to revamp my portfolio into an interactive 3D world built using [Three.js](https://github.com/mrdoob/three.js) and [Ammo.js](https://github.com/kripken/ammo.js), a port of the [Bullet physics engine](https://pybullet.org/wordpress/) to JavaScript. I had an absolute blast making this!
 
@@ -44,4 +44,4 @@ npm run dev
 ## License
 
 The project is licensed under the MIT License.
-# 3D-portfolio
+
