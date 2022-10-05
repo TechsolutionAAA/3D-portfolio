@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { WEBGL } from './WebGL';
 import * as Ammo from './builds/ammo';
 import { billboardTextures, boxTexture, inputText, URL, stoneTexture, woodTexture } from './resources/textures';
@@ -32,6 +33,7 @@ import {
 import { simpleText, floatingLabel, allSkillsSection, createTextOnPlane } from './resources/surfaces';
 
 import { pickPosition, launchClickPosition, getCanvasRelativePosition, rotateCamera, launchHover } from './resources/utils';
+import { TextureFilter } from 'three';
 
 export let cursorHoverObjects = [];
 
@@ -143,6 +145,16 @@ Ammo().then((Ammo) => {
 
     ball.castShadow = true;
     ball.receiveShadow = true;
+
+    // const loader = new GLTFLoader();
+
+    // loader.load('./src/jsm/model.gltf', function (object) {
+    //   console.log(object.animations)
+    //   scene.add(object.scene);
+    //   console.log(object);
+    // }, undefined, function (err) {
+    //   console.log(err);
+    // });
 
     scene.add(ball);
 
